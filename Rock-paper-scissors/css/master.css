@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #272727;
+    color: #f1f1f1;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@keyframes infoBadgeMove {
+    0% {top: -200px;}
+    25% {top: 0px;}
+    50% {top: 0px;}
+    75% {top: 0px;}
+    100% {top: -200px;}
+}
+
+.info {
+    background: #f1f1f1;
+    color: #272727;
+    border-radius: 0 0 25px 25px;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px 0 black;
+    width: 450px;
+    position: absolute;
+    visibility: visible;
+    text-align: center;
+    top: -200px;
+    left: 50%;
+    margin-left: -225px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    z-index: 1;
+    animation: ;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices {
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+    padding: 40px 15px 15px 15px;
+    margin: 25px;
+}
+
+.badge {
+    background: #272727;
+    width: 100px;
+    height: 12px;
+    position: absolute;
+    margin-top: -48px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.container_picture {
+    display: inline-flex;
+}
+
+.picture {
+    padding: 10px;
+    border-radius: 50%;
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0%);
+}
+
+#paper:hover {
+    cursor: pointer;
+    background: #f1f1f1;
+}
+
+#rock:hover {
+    cursor: pointer;
+    background: #f1f1f1;
+}
+
+#scissor:hover {
+    cursor: pointer;
+    background: #f1f1f1;
+}
+
+#contra {
+    font-size: 25px;
+    font-weight: bold;
+}

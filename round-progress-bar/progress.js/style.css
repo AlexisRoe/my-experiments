@@ -1,0 +1,31 @@
+/********************
+* Basic configuration
+*********************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/********************
+* progress.js
+*********************/
+
+.progress {
+    height: 300px;
+}
+
+.progress > svg {
+    height: 100%;
+    display: block;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rock - Paper - Scissors</title>
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+
+    <body>
+        <div class="info" id="infoBox">
+            <h2 id="results">Lets play. Choose your weapon.</h2>
+        </div>
+
+        <div class="wrapper">
+            <div class="choices">
+                <div class="badge">Player: <b id="result_player">0</b></div>
+                <div class="container_picture">
+                    <div class="picture" id="paper">
+                        <img src="picture/paper_100x100_player.png">
+                    </div>
+                    <div class="picture" id="rock">
+                        <img src="picture/rock_100x100_player.png">
+                    </div>
+                    <div class="picture" id="scissor">
+                        <img src="picture/scissors_100x100_player.png">
+                    </div>
+                </div>
+            </div>
+            <div id="contra">VS.</div>
+            <div class="choices">
+                <div class="badge">Computer: <b id="result_computer">0</b></div>
+                <div class="container_picture">
+                    <div class="picture" id="paper_computer">
+                        <img src="picture/paper_100x100_computer.png">
+                    </div>
+                    <div class="picture" id="rock_computer">
+                        <img src="picture/rock_100x100_computer.png">
+                    </div>
+                    <div class="picture" id="scissor_computer">
+                        <img src="picture/scissors_100x100_computer.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/game.js"></script>
+    </body>
+</html>

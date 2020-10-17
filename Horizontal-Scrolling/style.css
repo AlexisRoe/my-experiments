@@ -1,0 +1,87 @@
+div {
+    box-sizing: border-box;
+}
+
+/* 
+* Horizontal Scrolling with rotating the canvas
+* https://css-tricks.com/pure-css-horizontal-scrolling/
+*/
+.horizontal-scroll-wrapper {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: calc(250px + 1px);
+    max-height: 750px;
+    margin: 0;
+    padding-top: 1px;
+    background: #abc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-250px);
+    transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper > div {
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top;
+}
+
+.squares {
+    padding: 250px 0 0 0;
+}
+
+.squares > div {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0;
+}
+
+/* 
+* Smooth Horizontal Scrolling
+* https://codepen.io/colinlord/pen/oZNoOO
+*/
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper .card {
+  display: inline-block;
+}
+
+.card {
+  border: 2px solid #a6192d;
+  width: 150px;
+  height: 75px;
+  background: black;
+}
+
+.scrolling-wrapper {
+  height: 80px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar,{
+  display: none;
+}
+
+/* 
+* Horizontal Scrolling with jQuery
+* https://css-tricks.com/how-to-create-a-horizontally-scrolling-site/
+*/
+
+.post {
+  width: 500px;
+}
+
+tr {
+  vertical-align: top;
+}

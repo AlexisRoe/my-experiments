@@ -1,0 +1,45 @@
+/********************
+* Basic configuration
+*********************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+/********************
+* simple proress bar
+*********************/
+
+.container {
+    background-color: pink;
+}
+
+.container > * {
+    width: 100%;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid purple;
+    margin-top: 1.5rem;
+    background-color: #fff;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: purple;
+    width: 10%;
+}

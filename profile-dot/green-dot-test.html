@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dot test</title>
+        <style>
+            body {
+                background-color: rgb(59, 57, 57);
+            }
+            .container {
+                background-color: rgb(247, 240, 240);
+                display: grid;
+                place-items: center;
+                width: 250px;
+                height: 250px;
+                margin: 25px auto;
+            }
+
+            .wrapper {
+                position: relative;
+            }
+
+            .profile, .profile2 {
+                position: relative;
+                height: 50px;
+                width: 50px;
+                border: 1px solid rgba(255, 255, 255, 1);
+                padding: 5px;
+                border-radius: 50%;
+            }
+
+            .profile2::before {
+                content: '';
+                position: absolute;
+                bottom: 2px;
+                right: 2px;
+                width: 10px;
+                height: 10px;
+                border: 1px solid rgba(255, 255, 255, 1);
+                background-color: tomato;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            #profile {
+                height: 50px;
+                width: 50px;
+                border: 1px solid rgba(255, 255, 255, 1);
+                border-radius: 50%;
+            }
+
+            .fotobg {
+                background-image: url(./profile-dot/dog.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .profile--dot {
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                width: 10px;
+                height: 10px;
+                border: 1px solid rgba(255, 255, 255, 1);
+                border-radius: 50%;
+            }
+
+            .repositioning {
+                bottom: 8%;
+                right: 8%;
+            }
+
+            .green {
+                background-color: yellowgreen;
+            }
+            .red {
+                background-color: tomato;
+            }
+            .grey {
+                background-color: rgb(199, 194, 199);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile fotobg">
+                <div class="profile--dot red"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="profile2 fotobg"></div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <img src="./dog.jpg" alt="profile" id="profile" />
+                <div class="profile--dot red repositioning"></div>
+            </div>
+        </div>
+    </body>
+</html>

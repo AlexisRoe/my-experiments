@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* just for demonstration purpose */
+.central {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #777;
+}
+
+/* centralization of config, not original */
+:root {
+    --color-progress-bar: pink;
+    --stroke-width: 2;
+    --size-ball: 10px;
+}
+
+
+/************************
+* progress.js with thumb
+*************************/
+
+#container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px 50px;
+}
+
+#container > svg {
+    width: 100%;
+    display: block;
+}
+
+#other-ball {
+    width: var(--size-ball);
+    height: var(--size-ball);
+    border-radius: 50%;
+    background: var(--color-progress-bar);
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
